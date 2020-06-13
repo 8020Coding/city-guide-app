@@ -13,3 +13,21 @@
 .navbar-toggler {
   border: none;
 }
+
+@media (min-width: 768px) {
+  .navigation-links {
+    margin-top: 5rem !important;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 678px) {
+  .navigation-links {
+    margin-top: 15rem !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  .navigation-links {
+    margin-top: 2rem;
+  }
+}

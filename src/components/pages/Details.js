@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { InfoConsumer } from '../context';
-import styled from 'styled-components';
-import Reviews from '../Reviews';
+import React, { Component } from "react";
+import { InfoConsumer } from "../context";
+import styled from "styled-components";
+import Reviews from "../Reviews";
 
 class Details extends Component {
   render() {
     return (
       <InfoConsumer>
-        {data => {
+        {(data) => {
           const {
             id,
             headerTitle,
@@ -16,7 +16,7 @@ class Details extends Component {
             img,
             title,
             maps,
-            description
+            description,
           } = data.detailInfo;
 
           return (
@@ -50,7 +50,7 @@ class Details extends Component {
                 </div>
               </HeaderDetails>
               {/* Nav Link */}
-              <div className="container">
+              <div className="container navigation-links">
                 <ul className="nav nav-tabs">
                   {/* About Place Link */}
                   <li className="nav-item">
@@ -111,10 +111,10 @@ class Details extends Component {
                     <iframe
                       src={maps}
                       style={{
-                        border: '0',
-                        height: '28.125rem',
-                        width: '100%',
-                        frameborder: '0'
+                        border: "0",
+                        height: "28.125rem",
+                        width: "100%",
+                        frameborder: "0",
                       }}
                     />
                   </div>
