@@ -132,7 +132,6 @@ export default Details;
 
 const HeaderDetails = styled.header`
   background: linear-gradient(rgba(109, 109, 109), rgba(255, 255, 255));
-  height: 100vh;
   text-transform: uppercase;
   color: var(--mainWhite);
   text-align: center;
